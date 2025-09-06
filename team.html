@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Meet Our Team</title>
+<style>
+    @font-face {
+      font-family: 'poppins';
+      src: url('font/poppins.regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'poppins-bold';
+      src: url('font/poppins.bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'horizon';
+      src: url('font/horizon.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #CAD9EF;
+      color: black;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'horizon';
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav {
+      background-color: #333;
+      font-family: 'poppins-bold'; 
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: bold; 
+    }
+
+    nav ul li:hover {
+      background-color: #555;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .team-section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      font-family: 'horizon';
+    }
+
+    .team-section p {
+      font-size: 16px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-member {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto; 
+      border-radius: 12px; 
+      margin-bottom: 15px;
+      object-fit: cover; 
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #CAD9EF;
+      color: black;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+</style>
+</head>
+<body>
+
+  <header>
+    <img src="images/ChatGPT Image Aug 22, 2025, 10_29_06 AM.png" alt="Logo" width="63" height="54">
+    <h1>Game On</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">About</a>
+        <ul>
+           <li><a href="team.html">Our Team</a></li>
+           <li><a href="vision.html">Our Vision</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Shop Now</a>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="team-section">
+    <h2>Who We Are</h2>
+    <p>
+      At <strong>Game On</strong>, we’re more than just a sports accessory shop — we’re a team of passionate individuals 
+      driven by the love of fitness, performance, and innovation. Together, we aim to provide top-quality gear that empowers 
+      athletes and enthusiasts to push their limits and achieve greatness. Our diverse team brings creativity, strategy, and 
+      expertise to build a brand that truly connects with the sports community.
+    </p>
+
+    <div class="team-container">
+      <div class="team-member">
+        <img src="images/kanak kadmawala.jpg" alt="Kanak Kadmawala">
+        <h3>Kanak Kadmawala</h3>
+        <p>Founder &amp; Designer<br> Studies in XIIth grade<br>
+         Collaborator in crafting innovative sports accessories.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/keosha.JPG" alt="Keosha Seth">
+        <h3>Keosha Seth</h3>
+        <p>Founder &amp; Designer<br> Studies in XIth grade<br>
+         Creative force behind the designs and aesthetic vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  &copy; 2025 Game On | Designed by Kanak Kadmawala and Keosha Seth </footer>
+
+</body>
+</html>

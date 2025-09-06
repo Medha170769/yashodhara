@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <style>
+    @font-face {
+      font-family: 'poppins';
+      src: url('font/poppins.regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'poppins-bold';
+      src: url('font/poppins.bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'horizon';
+      src: url('font/horizon.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #CAD9EF;
+      color: black;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'horizon';
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav {
+      background-color: #333;
+      font-family: 'poppins-bold';
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li:hover {
+      background-color: #555;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+    .page-banner {
+      background-color: #CAD9EF;
+      text-align: center;
+      padding: 30px 20px;
+      font-family: 'horizon';
+    }
+
+    .page-banner h1 {
+      margin: 0;
+      font-size: 36px;
+      color: black;
+    }
+
+    .contact-form {
+      width: 50%;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #2c3e50;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #CAD9EF;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #2c3e50;
+      outline: none;
+    }
+
+    .contact-form button {
+      background-color: #CAD9EF;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      background-color: #aebfd8;
+    }
+
+    .contact-table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+
+    .contact-table th, .contact-table td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #CAD9EF;
+    }
+
+    .contact-table th {
+      background-color: #416CAB;
+      color: white;
+    }
+
+    .contact-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      background-color: #CAD9EF;
+      color: black;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .message-sent {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background-color: #416CAB;
+      color: white;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/ChatGPT Image Aug 22, 2025, 10_29_06 AM.png" alt="Logo" width="63" height="54">
+    <h1>Game On</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">About</a>
+        <ul>
+           <li><a href="team.html">Our Team</a></li>
+           <li><a href="vision.html">Our Vision</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Shop Now</a>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-banner">
+    <h1>Contact Us</h1>
+  </div>
+
+  <section class="contact-form">
+    <h2>Get in Touch</h2>
+    <form action="submit_form.php" method="post" id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+<div id="messageSent" class="message-sent">
+    <p>Message Sent Successfully!</p>
+  </div>
+
+  <section>
+    <h2 style="text-align:center; margin-top:40px;">Our Contact Information</h2>
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kanak Kadmawala</td>
+          <td>kanak.10120@skvgwalior.org</td>
+          <td>+91 123 456 7890</td>
+          <td>123 Sports Lane, Delhi, India</td>
+        </tr>
+        <tr>
+          <td>Keosha Seth</td>
+          <td>keosha.9951@skvgwalior.org</td>
+          <td>+91 987 654 3210</td>
+          <td>456 Fitness Road, Mumbai, India</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+  &copy; 2025 Game On | Designed by Kanak Kadmawala and Keosha Seth</footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting to a server
+      
+      document.getElementById('messageSent').style.display = 'block';
+      
+      setTimeout(function() {
+        document.getElementById('messageSent').style.display = 'none';
+        
+        document.getElementById('contactForm').reset();
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
